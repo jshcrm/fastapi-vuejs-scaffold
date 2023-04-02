@@ -9,6 +9,6 @@ RUN apt-get install -y apt-transport-https ca-certificates curl gnupg && \
 WORKDIR /app
 COPY ./ .
 
-RUN npm install
+RUN yarn install
 
 CMD ["npm", "run", "dev"]
